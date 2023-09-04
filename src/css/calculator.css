@@ -1,0 +1,187 @@
+:root {
+    --bg-color-body: rgb(183, 183, 207);
+    --bg-color-calculator: rgb(101, 101, 165);
+    --bg-color-sun: rgb(233, 233, 22);
+    --bg-color-moon: rgb(116, 108, 108);
+    --bg-color-button: rgb(150, 179, 221);
+    --bg-color-button-equal: rgb(8, 8, 235);
+    --text-color-button: rgb(0, 0, 0);
+    --text-color-input-result: rgb(29, 26, 26);
+    --text-color-input-number: rgb(20, 18, 18);
+}
+
+.dark-mode:root {
+    --bg-color-body: rgb(10, 10, 19);
+    --bg-color-calculator: rgb(57, 57, 68);
+    --bg-color-sun: rgb(116, 108, 108);
+    --bg-color-moon: rgb(60, 60, 207);
+    --bg-color-button: rgb(34, 31, 31);
+    --bg-color-button-equal: rgb(18, 218, 218);
+    --text-color-button: rgb(240, 228, 228);
+    --text-color-input-result: rgb(182, 182, 182);
+    --text-color-input-number: rgb(238, 227, 227);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica", "Arial";
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    background-color: var(--bg-color-body);
+}
+
+.container-calculator {
+    width: 100%;
+    max-width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    background-color: var(--bg-color-calculator);
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.container-header-switch {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+    height: 80px;
+    margin: 20px;
+    border: 1px solid var(--bg-color-body);
+    border-radius: 7px;
+}
+
+.container-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.icon-js {
+    font-size: 2rem;
+    color: rgb(255,223,0);
+}
+
+.span-title {
+    font-size: 1.5rem;
+    color: var(--text-color-input-number);
+}
+
+.icon-sun {
+    font-size: 2rem;
+    color: var(--bg-color-sun);
+    margin-right: 7px;
+}
+
+.icon-moon {
+    font-size: 2rem;
+    color: var(--bg-color-moon);
+    margin-left: 7px;
+}
+
+
+.switch-mode {
+    width: 60px;
+    height: 31px;
+    border: 2px solid var(--bg-color-body);
+    border-radius: 60px;
+    cursor: pointer;
+    position: relative;
+}
+
+.switch-mode::before {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: var(--bg-color-body);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.5s;
+}
+
+.switch-mode.dark-mode::before {
+    left: 31px;
+}
+
+.input-calc {
+    text-align: right;
+    padding: 4px;
+    overflow-x: auto;
+}
+
+.input-result {
+    width: 100%;
+    height: 30px;
+    color: var(--text-color-input-result);
+}
+
+.input-number {
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    color: var(--text-color-input-number);
+}
+
+.button {
+    flex: 1 0 70px;
+    min-height: 50px;
+    border-radius: 7px;
+    border-style: none;
+    outline: none;
+    margin: 1px;
+    font-size: 1.2rem;
+    background-color: var(--bg-color-button);
+    color: var(--text-color-button);
+    opacity: 0.6;
+}
+
+.button:hover {
+    opacity: 0.8;
+    transition: none;
+}
+
+.button:active {
+    opacity: 1;
+    transition: none;
+}
+
+.button-zero {
+    flex: 2 0 142px;
+}
+
+.equal-button {
+    background-color: var(--bg-color-button-equal);
+    color: black;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Calculator</title>
+    <link rel="stylesheet" href="src/css/calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container-calculator">
+        <div class="container-header">
+            <div class="container-header-title">
+                <i class="fa-brands fa-square-js icon-js"></i>
+                <span class="span-title">Calculator</span>
+            </div>
+            <div class="container-header-switch">
+                <i class="fa-solid fa-sun icon-sun"></i>
+                <div class="switch-mode" id="div-switch"></div>
+                <i class="fa-solid fa-moon icon-moon"></i>    
+            </div>
+        </div>
+        <div class="container-result">
+            <div class="input-calc input-result" id="input-result"></div>
+            <div class="input-calc input-number" id="input-number"></div>
+        </div>
+        <div class="container-buttons">
+            <button class="button clear-entry-button" id="button-clear-entry">CE</button>
+            <button class="button clear-button" id="button-clear">C</button>
+            <button class="button" id="button-backspace">
+                <i class="fa-solid fa-delete-left"></i>
+            </button>
+            <button class="button calc-button" value="/">/</button>
+            <button class="button calc-button" value="7">7</button>
+            <button class="button calc-button" value="8">8</button>
+            <button class="button calc-button" value="9">9</button>
+            <button class="button calc-button" value="*">x</button>
+            <button class="button calc-button" value="4">4</button>
+            <button class="button calc-button" value="5">5</button>
+            <button class="button calc-button" value="6">6</button>
+            <button class="button calc-button" value="-">-</button>
+            <button class="button calc-button" value="1">1</button>
+            <button class="button calc-button" value="2">2</button>
+            <button class="button calc-button" value="3">3</button>
+            <button class="button calc-button" value="+">+</button>
+            <button class="button calc-button button-zero" value="0">0</button>
+            <button class="button calc-button" value=",">,</button>
+            <button class="button calc-button equal-button" value="Enter">=</button>
+        </div>
+    </main>
+
+    <script src="src/js/calculator.js"></script>
+</body>
+</html>
