@@ -194,9 +194,11 @@ body {
 
     .button:hover {
         opacity: 0.6;
+        transition: inherit;
     }
 
     .button:active {
         opacity: inherit;
+        transition: inherit;
     }
 }
