@@ -185,3 +185,18 @@ body {
     background-color: var(--bg-color-button-equal);
     color: black;
 }
+
+@media only screen and (max-width: 480px) {
+
+    .switch-mode {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .button:hover {
+        opacity: 0.6;
+    }
+
+    .button:active {
+        opacity: inherit;
+    }
+}
